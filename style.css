@@ -15,13 +15,38 @@ body {
     font-weight: 700;
 }
 
-.wrapper {
+.firstPage {
     display: flex;
+    width: 100vw;
+    height: 80vh;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+h2 {
+    padding-bottom: 10px;
+    font-size: 40px;
+    text-transform: uppercase;
+}
+.startbtn {
+    font-size: 18px;
+    padding: 20px;
+    cursor: pointer;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    background-color: #eef1ff;
+    border-radius: 5px;
+}
+
+
+
+.wrapper {
+    display: none;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     height: 70vh;
     width: 100vw;
+    
 }
 
 
@@ -44,4 +69,25 @@ button {
 .icons {
     display: flex;
     gap: 40px;
+}
+
+@media only screen and (max-width: 700px) {
+    *,::before,
+    ::after{
+        margin: 0;
+        padding: 0;
+        font-family: 'Noto Sans', sans-serif;
+        font-size: 16px;
+    }
+    .icons {
+        display: flex;
+        flex-direction: column;
+        gap: 40px;
+    }
+    h2 {
+        padding-bottom: 10px;
+        font-size: 20px;
+        text-transform: uppercase;
+        text-align: center;
+    }
 }
